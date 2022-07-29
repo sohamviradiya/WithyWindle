@@ -1,2 +1,4 @@
 # WithyWindle
-TO DO fill
+## The Odin Project
+### Project: Weather App
+#### JavaScript Course
