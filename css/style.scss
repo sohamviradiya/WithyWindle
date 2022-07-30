@@ -1,0 +1,64 @@
+$primary-color: #364146;
+$blue-color: #364166;
+$red-color: #472962;
+$green-color: #204461;
+
+:root{
+     font-size: minmax(1vh,1vw);
+}
+
+.container{
+     background-image: url(../img/background.jpg);
+     background-size: cover;
+     width:100vw;
+     height: 100vh;
+     margin: -8px;
+}
+
+header{
+     height: 8rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+     background-color: $green-color;
+     color: invert($green-color);
+}
+
+#page-icon{
+     height: 7rem;
+     aspect-ratio: 1;
+}
+
+#page-title{
+     font-size: 5rem;
+     text-shadow: 3px 3px 4px $red-color;
+}
+
+#city-name,#country-name{
+     font-size: 3rem;
+}
+
+#input-field{
+     display: flex;
+     gap: -3vw;
+}
+
+#city-button,#city-input {
+     font-size: 1.5rem;
+}
+
+#city-button{
+     background-color: $primary-color;
+     color: invert($primary-color);
+}
+
+#city-button:hover{
+     background-color: $blue-color;
+     color: invert($blue-color);
+}
+
+#city-button:focus{
+     background-color: $red-color;
+     color: invert($red-color);
+}

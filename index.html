@@ -6,112 +6,119 @@
      <title>Withywindle</title>
      <link rel="stylesheet" type="text/css" href="css/style.css">
      <script src="src/script.js" defer></script>
+     <link rel="icon" type="image/x-icon" href="./img/icon.jpg">
 </head>
 
 <body>
-     <header>
-          <div class="header-content" id="page-title">WithyWindle</div>
-          <div class="header-content" id="city-name">Vladivostok</div>
-          <div class="header-content" id="country-name">Russia</div>
-          <input type="text" class="header-input" id="city-input" placeholder="enter city">
-          <button class="header-button" id="city-button"></button>
-     </header>
-     <main>
-          <section class="page-section" id="side-bar">
-               <div class="sidebar-data-field">
-                    <label for="lat">Latitude: </label>
-                    <output class="side-bar-output" id="lat"></output>
+     <div class="container">
+          <header>
+               <img src="./img/river-svgrepo-com.svg" id="page-icon">
+               <div class="header-content" id="page-title">WithyWindle</div>
+               <div class="header-content" id="city-name">Vladivostok</div>
+               <div class="header-content" id="country-name">Russia</div>
+               <div class="header-content" id="input-field">
+                    <input type="text" class="header-input" id="city-input" placeholder="Enter your city">
+                    <button class="header-button" id="city-button">Search</button>
                </div>
+               
+          </header>
+          <main>
+               <section class="page-section" id="side-bar">
+                    <div class="sidebar-data-field">
+                         <label for="lat">Latitude: </label>
+                         <output class="side-bar-output" id="lat"></output>
+                    </div>
 
-               <div class="sidebar-data-field">
-                    <label for="lon">Longitude: </label>
-                    <output class="side-bar-output" id="lon"></output>
-               </div>
+                    <div class="sidebar-data-field">
+                         <label for="lon">Longitude: </label>
+                         <output class="side-bar-output" id="lon"></output>
+                    </div>
 
-               <div class="sidebar-data-field">
-                    <label for="zone-area">Area: </label>
-                    <output class="side-bar-output" id="zone-area"></output>
-               </div>
+                    <div class="sidebar-data-field">
+                         <label for="zone-area">Area: </label>
+                         <output class="side-bar-output" id="zone-area"></output>
+                    </div>
 
-               <div class="sidebar-data-field">
-                    <label for="time-zone">Time-zone: </label>
-                    <output class="side-bar-output" id="time-zone"></output>
-               </div>
+                    <div class="sidebar-data-field">
+                         <label for="time-zone">Time-zone: </label>
+                         <output class="side-bar-output" id="time-zone"></output>
+                    </div>
 
-               <div class="sidebar-data-field">
-                    <label for="dt">Collected at: </label>
-                    <output class="side-bar-output" id="dt"></output>
-               </div>
+                    <div class="sidebar-data-field">
+                         <label for="dt">Collected at: </label>
+                         <output class="side-bar-output" id="dt"></output>
+                    </div>
 
-               <div class="sidebar-data-field">
-                    <label for="sunrise">Sunrise at: </label>
-                    <output class="side-bar-output" id="sunrise"></output>
-               </div>
+                    <div class="sidebar-data-field">
+                         <label for="sunrise">Sunrise at: </label>
+                         <output class="side-bar-output" id="sunrise"></output>
+                    </div>
 
-               <div class="sidebar-data-field">
-                    <label for="sunset"> Sunset at: </label>
-                    <output class="side-bar-output" id="sunset"></output>
-               </div>
+                    <div class="sidebar-data-field">
+                         <label for="sunset"> Sunset at: </label>
+                         <output class="side-bar-output" id="sunset"></output>
+                    </div>
 
-               <div class="sidebar-data-field">
-                    <label for="tempature"> Temprature: </label>
-                    <output class="side-bar-output" id="tempature"></output>
-               </div>
+                    <div class="sidebar-data-field">
+                         <label for="tempature"> Temprature: </label>
+                         <output class="side-bar-output" id="tempature"></output>
+                    </div>
 
-               <div class="sidebar-data-field">
-                    <label for="feels_like"> Feels-like: </label>
-                    <output class="side-bar-output" id="feels_like"></output>
+                    <div class="sidebar-data-field">
+                         <label for="feels_like"> Feels-like: </label>
+                         <output class="side-bar-output" id="feels_like"></output>
 
-               </div>
-               <div class="sidebar-data-field">
-                    <label for="pressure"> Pressure: </label>
-                    <output class="side-bar-output" id="pressure"></output>
+                    </div>
+                    <div class="sidebar-data-field">
+                         <label for="pressure"> Pressure: </label>
+                         <output class="side-bar-output" id="pressure"></output>
 
-               </div>
-               <div class="sidebar-data-field">
-                    <label for="humidity">Humidity: </label>
-                    <output class="side-bar-output" id="humidity"></output>
+                    </div>
+                    <div class="sidebar-data-field">
+                         <label for="humidity">Humidity: </label>
+                         <output class="side-bar-output" id="humidity"></output>
 
-               </div>
-               <div class="sidebar-data-field">
-                    <label for="dew_point">Dew Point: </label>
-                    <output class="side-bar-output" id="dew_point"></output>
+                    </div>
+                    <div class="sidebar-data-field">
+                         <label for="dew_point">Dew Point: </label>
+                         <output class="side-bar-output" id="dew_point"></output>
 
-               </div>
-               <div class="sidebar-data-field">
-                    <label for="uvi">UV Index: </label>
-                    <output class="side-bar-output" id="uvi"></output>
+                    </div>
+                    <div class="sidebar-data-field">
+                         <label for="uvi">UV Index: </label>
+                         <output class="side-bar-output" id="uvi"></output>
 
-               </div>
-               <div class="sidebar-data-field">
-                    <label for="clouds">Clouds: </label>
-                    <output class="side-bar-output" id="clouds"></output>
+                    </div>
+                    <div class="sidebar-data-field">
+                         <label for="clouds">Clouds: </label>
+                         <output class="side-bar-output" id="clouds"></output>
 
-               </div>
-               <div class="sidebar-data-field">
-                    <label for="visibility">Visibitily: </label>
-                    <output class="side-bar-output" id="visibility"></output>
+                    </div>
+                    <div class="sidebar-data-field">
+                         <label for="visibility">Visibitily: </label>
+                         <output class="side-bar-output" id="visibility"></output>
 
-               </div>
-               <div class="sidebar-data-field">
-                    <label for="wind_speed">Wind-speed: </label>
-                    <output class="side-bar-output" id="wind_speed"></output>
+                    </div>
+                    <div class="sidebar-data-field">
+                         <label for="wind_speed">Wind-speed: </label>
+                         <output class="side-bar-output" id="wind_speed"></output>
 
-               </div>
-               <div class="sidebar-data-field">
-                    <label for="wind_deg">Wind-angle: </label>
-                    <output class="side-bar-output" id="wind_deg"></output>
-               </div>
-          </section>
-          <section class="page-section" id="today">
-          </section>
-          <section class="page-section" id="this-week">
-          </section>
+                    </div>
+                    <div class="sidebar-data-field">
+                         <label for="wind_deg">Wind-angle: </label>
+                         <output class="side-bar-output" id="wind_deg"></output>
+                    </div>
+               </section>
+               <section class="page-section" id="today">
+               </section>
+               <section class="page-section" id="this-week">
+               </section>
 
-     </main>
-     <footer>
-          <a href="https://github.com/sohamviradiya/WithyWindle">git-link</a>
-     </footer>
+          </main>
+          <footer>
+               <a href="https://github.com/sohamviradiya/WithyWindle">git-link</a>
+          </footer>
+     </div>
 </body>
 
 </html>
