@@ -1,193 +1,200 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 
-<head> 
-     <meta charset="UTF-8"> 
-     <title> Withywindle </title> 
-     <link rel="stylesheet" type="text/css" href="css/style.css"> 
-     <script src="src/script.js" defer> </script> 
-     <link rel="icon" type="image/x-icon" href="./img/icon.jpg"> 
-</head> 
+<head>
+     <meta charset="UTF-8">
+     <title> Withywindle </title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script src="src/script.js" defer> </script>
+     <link rel="icon" type="image/x-icon" href="./img/icon.jpg">
+</head>
 
-<body> 
-     <div class="container"> 
-          <header> 
-               <img src="./img/river-svgrepo-com.svg" id="page-icon"> 
-               <div class="header-content" id="page-title"> WithyWindle </div> 
-               <div class="header-content" id="city-name"> Vladivostok </div> 
-               <div class="header-content" id="input-field"> 
-                    <input type="text" class="header-input" id="city-input" placeholder="Enter your city" value="Vladivostok"> 
-                    <button class="header-button" id="search-button"> </button> 
-               </div> 
-          </header> 
+<body>
+     <div class="container">
+          <header>
+               <img src="./img/river-svgrepo-com.svg" id="page-icon">
+               <div class="header-content" id="page-title"> WithyWindle </div>
+               <div class="header-content" id="city-name"> Vladivostok </div>
+               <div class="header-content" id="input-field">
+                    <input type="text" class="header-input" id="city-input" placeholder="Enter your city"
+                         value="Vladivostok">
+                    <button class="header-button" id="search-button"> </button>
+               </div>
+          </header>
           <main>
 
                <section class="data-section" id="country-section">
                     <div class="section-title" id="country-title"> Country </div>
 
-                    <div class="widget" id="country-widget"> 
+                    <div class="widget" id="country-widget">
                          <img class="icon" id="map-img" src="">
                     </div>
 
-                    <div class="data-field"> 
-                         <label for="country"> Country: </label> 
-                         <output class="output" id="country"> </output> 
-                    </div> 
+                    <div class="data-field">
+                         <label for="country"> Country: </label>
+                         <output class="output" id="country"> </output>
+                    </div>
 
-                    <div class="data-field"> 
-                         <label for="region"> Region: </label> 
-                         <output class="output" id="region"> </output> 
-                    </div> 
+                    <div class="data-field">
+                         <label for="region"> Region: </label>
+                         <output class="output" id="region"> </output>
+                    </div>
                </section>
-                    
-                    <section class="data-section" id="location">
-                         <div class="section-title" id="location-title">Location</div>
 
-                         <div class="data-field"> 
-                              <label for="lat"> Latitude: </label> 
-                              <output class="output" id="lat"> </output> 
-                         </div> 
-     
-                         <div class="data-field"> 
-                              <label for="lon"> Longitude: </label> 
-                              <output class="output" id="lon"> </output> 
-                         </div> 
+               <section class="data-section" id="weather">
+                    <div class="section-title" id="atmosphere-title">Weather</div>
 
-                         <div class="data-field">
-                              <label for="sea_level"> Sea-Level: </label> 
-                              <output class="output" id="sea_level"> </output> 
-                         </div> 
+                    <div class="widget" id="weather-widget">
+                         <img class="icon" id="weather-icon" src="">
+                    </div>
 
-                         <div class="data-field"> 
-                              <label for="grnd_level"> Ground-Level: </label> 
-                              <output class="output" id="grnd_level"> </output> 
-                         </div> 
+                    <div class="data-field">
+                         <label for="type"> Type: </label>
+                         <output class="output" id="type"> </output>
+                    </div>
 
-                    </section>
+                    <div class="data-field">
+                         <label for="description"> Description: </label>
+                         <output class="output" id="description"> </output>
+                    </div>
+               </section>
 
-                    <section class="data-section" id="time">
-                         <div class="section-title" id="time-title">Time</div>
-                         
-                         <div class="data-field"> 
-                              <label for="time_zone"> Time-zone: </label> 
-                              <output class="output" id="time_zone"> </output> 
-                         </div> 
+               <section class="data-section" id="temprature">
+                    <div class="section-title" id="atmosphere-title">Temprature</div>
 
-                         <div class="data-field"> 
-                              <label for="dt"> Collected at: </label> 
-                              <output class="output" id="dt"> </output> 
-                         </div> 
-     
-                         <div class="data-field"> 
-                              <label for="sunrise"> Sunrise at: </label> 
-                              <output class="output" id="sunrise"> </output> 
-                         </div> 
-     
-                         <div class="data-field"> 
-                              <label for="sunset"> Sunset at: </label> 
-                              <output class="output" id="sunset"> </output> 
-                         </div>
-                    </section>
+                    <div class="data-field">
+                         <label for="temp"> Temprature: </label>
+                         <output class="output" id="temp"> </output>
+                    </div>
 
-                    <section class="data-section" id="weather">
-                         <div class="section-title" id="atmosphere-title">Weather</div>
+                    <div class="data-field">
+                         <label for="feels_like"> Feels-like: </label>
+                         <output class="output" id="feels_like"> </output>
+                    </div>
 
-                         <div class="widget" id="weather-widget"> 
-                              <img class="icon" id="weather-icon" src="">
-                         </div> 
-          
-                         <div class="data-field"> 
-                              <label for="type"> Type: </label> 
-                              <output class="output" id="type"> </output> 
-                         </div> 
+                    <div class="data-field">
+                         <label for="zone-area"> Minimum: </label>
+                         <output class="output" id="temp_min"> </output>
+                    </div>
 
-                         <div class="data-field"> 
-                              <label for="description"> Description: </label> 
-                              <output class="output" id="description"> </output> 
-                         </div> 
-                    </section>
-
-                    <section class="data-section" id="temprature">
-                         <div class="section-title" id="atmosphere-title">Temprature</div>
-
-                         <div class="data-field"> 
-                              <label for="temp"> Temprature: </label> 
-                              <output class="output" id="temp"> </output> 
-                         </div> 
-
-                         <div class="data-field"> 
-                              <label for="feels_like"> Feels-like: </label> 
-                              <output class="output" id="feels_like"> </output> 
-                         </div> 
-
-                         <div class="data-field"> 
-                              <label for="zone-area"> Minimum: </label> 
-                              <output class="output" id="temp_min"> </output> 
-                         </div> 
-
-                         <div class="data-field"> 
-                              <label for="zone-area"> Maximum: </label> 
-                              <output class="output" id="temp_max"> </output> 
-                         </div> 
-                    </section>
-
-                    <section class="data-section" id="atmosphere">
-                         <div class="section-title" id="atmosphere-title">Atmosphere</div>
-
-                         <div class="data-field"> 
-                              <label for="pressure"> Pressure: </label> 
-                              <output class="output" id="pressure"> </output> 
-                         </div> 
-
-                         <div class="data-field"> 
-                              <label for="humidity"> Humidity: </label> 
-                              <output class="output" id="humidity"> </output> 
-                         </div> 
-
-                         <div class="data-field"> 
-                              <label for="clouds"> Clouds: </label> 
-                              <output class="output" id="clouds"> </output> 
-                         </div> 
-
-                         <div class="data-field"> 
-                              <label for="visibility"> Visibitily: </label> 
-                              <output class="output" id="visibility"> </output> 
-                         </div> 
-                    </section>
-
-                    <section class="data-section" id="wind">
-                         <div class="section-title" id="wind-title">Wind data</div>
-
-                         <div class="data-field"> 
-                              <label for="speed"> Wind-speed : </label> 
-                              <output class="output" id="speed"> </output> 
-                         </div> 
-
-                         <div class="data-field"> 
-                              <label for="deg"> Wind-angle : </label> 
-                              <output class="output" id="deg"> </output> 
-                         </div> 
-
-                         <div class="data-field"> 
-                              <label for="gust"> Wind-gust : </label> 
-                              <output class="output" id="gust"> </output> 
-                         </div> 
-                    </section>
-                    
-          </main> 
-          <footer> 
-               <a target="_blank" class="footer-link" id="weather-link" href="https://openweathermap.org/"> 
-                    <img class="footer-image" id="weather-image" src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"> 
-               </a> 
-               <a target="_blank" class="footer-link" id="git-link" href="https://github.com/sohamviradiya/WithyWindle"> 
-                    <img class="footer-image" id="git-image" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"> 
-               </a> 
-               <a target="_blank" class="footer-link" id="odin-link" href="https://www.theodinproject.com/lessons/node-path-javascript-weather-app"> 
-                    <img class="footer-image" id="odin-image" src="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg"> 
-               </a> 
+                    <div class="data-field">
+                         <label for="zone-area"> Maximum: </label>
+                         <output class="output" id="temp_max"> </output>
+                    </div>
+               </section>
                
-          </footer> 
-     </div> 
-</body> 
+               <section class="data-section" id="location">
+                    <div class="section-title" id="location-title">Location</div>
 
-</html> 
+                    <div class="data-field">
+                         <label for="lat"> Latitude: </label>
+                         <output class="output" id="lat"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="lon"> Longitude: </label>
+                         <output class="output" id="lon"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="sea_level"> Sea-Level: </label>
+                         <output class="output" id="sea_level"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="grnd_level"> Ground-Level: </label>
+                         <output class="output" id="grnd_level"> </output>
+                    </div>
+
+               </section>
+
+               <section class="data-section" id="time">
+                    <div class="section-title" id="time-title">Time</div>
+
+                    <div class="data-field">
+                         <label for="time_zone"> Time-zone: </label>
+                         <output class="output" id="time_zone"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="dt"> Collected at: </label>
+                         <output class="output" id="dt"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="sunrise"> Sunrise at: </label>
+                         <output class="output" id="sunrise"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="sunset"> Sunset at: </label>
+                         <output class="output" id="sunset"> </output>
+                    </div>
+               </section>
+
+
+
+               <section class="data-section" id="atmosphere">
+                    <div class="section-title" id="atmosphere-title">Atmosphere</div>
+
+                    <div class="data-field">
+                         <label for="pressure"> Pressure: </label>
+                         <output class="output" id="pressure"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="humidity"> Humidity: </label>
+                         <output class="output" id="humidity"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="clouds"> Clouds: </label>
+                         <output class="output" id="clouds"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="visibility"> Visibitily: </label>
+                         <output class="output" id="visibility"> </output>
+                    </div>
+               </section>
+
+               <section class="data-section" id="wind">
+                    <div class="section-title" id="wind-title">Wind data</div>
+
+                    <div class="data-field">
+                         <label for="speed"> Wind-speed : </label>
+                         <output class="output" id="speed"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="deg"> Wind-angle : </label>
+                         <output class="output" id="deg"> </output>
+                    </div>
+
+                    <div class="data-field">
+                         <label for="gust"> Wind-gust : </label>
+                         <output class="output" id="gust"> </output>
+                    </div>
+               </section>
+
+          </main>
+          <footer>
+               <a target="_blank" class="footer-link" id="weather-link" href="https://openweathermap.org/">
+                    <img class="footer-image" id="weather-image"
+                         src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png">
+               </a>
+               <a target="_blank" class="footer-link" id="git-link" href="https://github.com/sohamviradiya/WithyWindle">
+                    <img class="footer-image" id="git-image"
+                         src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
+               </a>
+               <a target="_blank" class="footer-link" id="odin-link"
+                    href="https://www.theodinproject.com/lessons/node-path-javascript-weather-app">
+                    <img class="footer-image" id="odin-image"
+                         src="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg">
+               </a>
+
+          </footer>
+     </div>
+</body>
+
+</html>

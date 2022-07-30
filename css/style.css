@@ -62,12 +62,43 @@ header {
 }
 
 main {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 2rem;
   padding: 2rem;
   align-items: center;
+}
+
+#country-section {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#weather {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+#temprature {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+#location {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#time {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#atmosphere {
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 section {
@@ -79,8 +110,9 @@ section {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.5rem;
+  padding: 2rem;
+  height: 25rem;
 }
 
 .section-title {
