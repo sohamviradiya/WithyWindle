@@ -44,21 +44,37 @@ header{
      gap: -3vw;
 }
 
-#city-button,#city-input {
+#search-button,#city-input {
      font-size: 1.5rem;
+     
 }
 
-#city-button{
+#search-button{
+     background-image: url('https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-search-thin.png');
+     background-size: 2rem;
+     background-repeat: no-repeat;
+     background-clip: content-box;
+     background-position: center;
+     height: 2.7rem;
+     padding: 0.1rem;
+     aspect-ratio: 1;
+}
+
+footer{
+     display: flex;
+     flex-direction: row;
+     height: auto;
      background-color: $primary-color;
-     color: invert($primary-color);
+     padding: 1rem;
+     align-content: center;
+     justify-content: end;
+     gap: 2rem;
 }
 
-#city-button:hover{
-     background-color: $blue-color;
-     color: invert($blue-color);
+.footer-link{
+     text-decoration: none;
+     font-size: 2rem;
+     color: invert($color: $primary-color)
 }
 
-#city-button:focus{
-     background-color: $red-color;
-     color: invert($red-color);
-}
+
