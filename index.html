@@ -1,135 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="en"> 
 
-<head>
-     <meta charset="UTF-8">
-     <title> Withywindle </title>
-     <link rel="stylesheet" type="text/css" href="css/style.css">
-     <script src="src/script.js" defer></script>
-     <link rel="icon" type="image/x-icon" href="./img/icon.jpg">
-</head>
+<head> 
+     <meta charset="UTF-8"> 
+     <title> Withywindle </title> 
+     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+     <script src="src/script.js" defer> </script> 
+     <link rel="icon" type="image/x-icon" href="./img/icon.jpg"> 
+</head> 
 
-<body>
-     <div class="container">
-          <header>
-               <img src="./img/river-svgrepo-com.svg" id="page-icon">
-               <div class="header-content" id="page-title"> WithyWindle</div>
-               <div class="header-content" id="city-name">Vladivostok</div>
-               <div class="header-content" id="country-name">Russia</div>
-               <div class="header-content" id="input-field">
-                    <input type="text" class="header-input" id="city-input" placeholder="Enter your city">
-                    <button class="header-button" id="search-button"></button>
-               </div>
-          </header>
-          <main>
-               <section class="page-section" id="side-bar">
-                    <div class="sidebar-data-field">
-                         <label for="lat">Latitude: </label>
-                         <output class="side-bar-output" id="lat"></output>
-                    </div>
+<body> 
+     <div class="container"> 
+          <header> 
+               <img src="./img/river-svgrepo-com.svg" id="page-icon"> 
+               <div class="header-content" id="page-title"> WithyWindle</div> 
+               <div class="header-content" id="city-name"> Vladivostok</div> 
+               <div class="header-content" id="country-name"> Russia</div> 
+               <div class="header-content" id="input-field"> 
+                    <input type="text" class="header-input" id="city-input" placeholder="Enter your city"> 
+                    <button class="header-button" id="search-button"> </button> 
+               </div> 
+          </header> 
+          <main> 
+               <section class="page-section" id="side-bar"> 
+                    <div class="sidebar-data-field"> 
+                         <label for="lat"> Latitude: </label> 
+                         <output class="side-bar-output" id="lat"> </output> 
+                    </div> 
 
-                    <div class="sidebar-data-field">
-                         <label for="lon">Longitude: </label>
-                         <output class="side-bar-output" id="lon"></output>
-                    </div>
+                    <div class="sidebar-data-field"> 
+                         <label for="lon"> Longitude: </label> 
+                         <output class="side-bar-output" id="lon"> </output> 
+                    </div> 
 
-                    <div class="sidebar-data-field">
-                         <label for="zone-area">Area: </label>
-                         <output class="side-bar-output" id="zone-area"></output>
-                    </div>
+                    <div class="sidebar-data-field"> 
+                         <label for="country"> Country: </label> 
+                         <output class="side-bar-output" id="country"> </output> 
+                    </div> 
+                    
+                    <div class="sidebar-data-field"> 
+                         <label for="time-zone"> Time-zone: </label> 
+                         <output class="side-bar-output" id="time-zone"> </output> 
+                    </div> 
 
-                    <div class="sidebar-data-field">
-                         <label for="time-zone">Time-zone: </label>
-                         <output class="side-bar-output" id="time-zone"></output>
-                    </div>
+                    <div class="sidebar-data-field"> 
+                         <label for="sea_level"> Sea-Level: </label> 
+                         <output class="side-bar-output" id="sea_level"> </output> 
+                    </div> 
 
-                    <div class="sidebar-data-field">
-                         <label for="dt">Collected at: </label>
-                         <output class="side-bar-output" id="dt"></output>
-                    </div>
+                    <div class="sidebar-data-field"> 
+                         <label for="grnd_level"> Sea-Level: </label> 
+                         <output class="side-bar-output" id="grnd_level"> </output> 
+                    </div> 
 
-                    <div class="sidebar-data-field">
-                         <label for="sunrise">Sunrise at: </label>
-                         <output class="side-bar-output" id="sunrise"></output>
-                    </div>
+                    <div class="sidebar-data-field"> 
+                         <label for="dt"> Collected at: </label> 
+                         <output class="side-bar-output" id="dt"> </output> 
+                    </div> 
 
-                    <div class="sidebar-data-field">
-                         <label for="sunset"> Sunset at: </label>
-                         <output class="side-bar-output" id="sunset"></output>
-                    </div>
+                    <div class="sidebar-data-field"> 
+                         <label for="sunrise"> Sunrise at: </label> 
+                         <output class="side-bar-output" id="sunrise"> </output> 
+                    </div> 
 
-                    <div class="sidebar-data-field">
-                         <label for="tempature"> Temprature: </label>
-                         <output class="side-bar-output" id="tempature"></output>
-                    </div>
+                    <div class="sidebar-data-field"> 
+                         <label for="sunset"> Sunset at: </label> 
+                         <output class="side-bar-output" id="sunset"> </output> 
+                    </div> 
 
-                    <div class="sidebar-data-field">
-                         <label for="feels_like"> Feels-like: </label>
-                         <output class="side-bar-output" id="feels_like"></output>
+                    <div class="sidebar-data-field"> 
+                         <label for="tempature"> Temprature: </label> 
+                         <output class="side-bar-output" id="tempature"> </output> 
+                    </div> 
 
-                    </div>
-                    <div class="sidebar-data-field">
-                         <label for="pressure"> Pressure: </label>
-                         <output class="side-bar-output" id="pressure"></output>
+                    <div class="sidebar-data-field"> 
+                         <label for="feels_like"> Feels-like: </label> 
+                         <output class="side-bar-output" id="feels_like"> </output> 
+                    </div> 
 
-                    </div>
-                    <div class="sidebar-data-field">
-                         <label for="humidity">Humidity: </label>
-                         <output class="side-bar-output" id="humidity"></output>
+                    <div class="sidebar-data-field"> 
+                         <label for="zone-area"> Minimum: </label> 
+                         <output class="side-bar-output" id="temp_min"> </output> 
+                    </div> 
 
-                    </div>
-                    <div class="sidebar-data-field">
-                         <label for="dew_point">Dew Point: </label>
-                         <output class="side-bar-output" id="dew_point"></output>
+                    <div class="sidebar-data-field"> 
+                         <label for="zone-area"> Maximum: </label> 
+                         <output class="side-bar-output" id="temp_max"> </output> 
+                    </div> 
 
-                    </div>
-                    <div class="sidebar-data-field">
-                         <label for="uvi">UV Index: </label>
-                         <output class="side-bar-output" id="uvi"></output>
+                    <div class="sidebar-data-field"> 
+                         <label for="pressure"> Pressure: </label> 
+                         <output class="side-bar-output" id="pressure"> </output> 
 
-                    </div>
-                    <div class="sidebar-data-field">
-                         <label for="clouds">Clouds: </label>
-                         <output class="side-bar-output" id="clouds"></output>
+                    </div> 
+                    <div class="sidebar-data-field"> 
+                         <label for="humidity"> Humidity: </label> 
+                         <output class="side-bar-output" id="humidity"> </output> 
 
-                    </div>
-                    <div class="sidebar-data-field">
-                         <label for="visibility">Visibitily: </label>
-                         <output class="side-bar-output" id="visibility"></output>
+                    </div> 
+                    <div class="sidebar-data-field"> 
+                         <label for="dew_point"> Dew Point: </label> 
+                         <output class="side-bar-output" id="dew_point"> </output> 
 
-                    </div>
-                    <div class="sidebar-data-field">
-                         <label for="wind_speed">Wind-speed: </label>
-                         <output class="side-bar-output" id="wind_speed"></output>
+                    </div> 
+                    <div class="sidebar-data-field"> 
+                         <label for="uvi"> UV Index: </label> 
+                         <output class="side-bar-output" id="uvi"> </output> 
+                    </div> 
 
-                    </div>
-                    <div class="sidebar-data-field">
-                         <label for="wind_deg">Wind-angle: </label>
-                         <output class="side-bar-output" id="wind_deg"></output>
-                    </div>
-               </section>
-               <section class="page-section" id="today">
-                    <div class="weather-widget" id="current">
+                    <div class="sidebar-data-field"> 
+                         <label for="clouds"> Clouds: </label> 
+                         <output class="side-bar-output" id="clouds"> </output> 
+                    </div> 
 
-                    </div>
-               </section>
-               <section class="page-section" id="this-week">
-               </section>
+                    <div class="sidebar-data-field"> 
+                         <label for="visibility"> Visibitily: </label> 
+                         <output class="side-bar-output" id="visibility"> </output> 
+                    </div> 
 
-          </main>
-          <footer>
-               <a target="_blank" class="footer-link" id="weather-link" href="https://openweathermap.org/">
-                    <img class="footer-image" id="weather-image" src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png">
-               </a>
-               <a target="_blank" class="footer-link" id="git-link" href="https://github.com/sohamviradiya/WithyWindle">
-                    <img class="footer-image" id="git-image" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
-               </a>
-               <a target="_blank" class="footer-link" id="odin-link" href="https://www.theodinproject.com/lessons/node-path-javascript-weather-app">
-                    <img class="footer-image" id="odin-image" src="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg">
-               </a>
+                    <div class="sidebar-data-field"> 
+                         <label for="speed"> Wind-speed: </label> 
+                         <output class="side-bar-output" id="speed"> </output> 
+
+                    </div> 
+
+                    <div class="sidebar-data-field"> 
+                         <label for="deg"> Wind-angle: </label> 
+                         <output class="side-bar-output" id="deg"> </output> 
+                    </div> 
+
+                    <div class="sidebar-data-field"> 
+                         <label for="gust"> Wind-gust: </label> 
+                         <output class="side-bar-output" id="gust"> </output> 
+                    </div> 
+
+               </section> 
+               <section class="page-section" id="today"> 
+                    <div class="weather-widget" id="current"> 
+
+                    </div> 
+               </section> 
+               <section class="page-section" id="this-week"> 
+               </section> 
+
+          </main> 
+          <footer> 
+               <a target="_blank" class="footer-link" id="weather-link" href="https://openweathermap.org/"> 
+                    <img class="footer-image" id="weather-image" src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"> 
+               </a> 
+               <a target="_blank" class="footer-link" id="git-link" href="https://github.com/sohamviradiya/WithyWindle"> 
+                    <img class="footer-image" id="git-image" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"> 
+               </a> 
+               <a target="_blank" class="footer-link" id="odin-link" href="https://www.theodinproject.com/lessons/node-path-javascript-weather-app"> 
+                    <img class="footer-image" id="odin-image" src="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg"> 
+               </a> 
                
-          </footer>
-     </div>
-</body>
+          </footer> 
+     </div> 
+</body> 
 
-</html>
+</html> 

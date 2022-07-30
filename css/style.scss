@@ -14,12 +14,12 @@ body{
      background-image: url(../img/background.jpg);
      background-size:cover;
      background-repeat: no-repeat;
+     margin: 0;
 }
 
 .container{
-     
-     width: calc(100vw - 18px);
-     margin:-8px 0 0 -8px;
+     max-width: 100%;
+     width: 100vw;
 }
 
 header{
