@@ -1,13 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&display=swap");
 :root {
   font-size: minmax(1vh, 1vw);
+  font-family: "Amatic SC", cursive;
+  font-family: "Indie Flower", cursive;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
-  background-image: url(../img/background.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  margin: -8px;
+  width: calc(100vw - 18px);
+  margin: -8px 0 0 -8px;
 }
 
 header {
@@ -55,18 +61,40 @@ header {
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
   height: auto;
   background-color: #364146;
-  padding: 1rem;
+  padding: 1rem 8rem;
+  display: flex;
+  flex-direction: row-reverse;
   align-content: center;
   justify-content: end;
-  gap: 2rem;
+  gap: 8rem;
 }
 
-.footer-link {
-  text-decoration: none;
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#side-bar {
+  background-color: #472962;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar-data-field {
+  height: 3rem;
   font-size: 2rem;
-  color: #c9beb9;
+  width: 16rem;
+  color: #b8d69d;
+}
+
+.footer-image {
+  height: 5rem;
 }/*# sourceMappingURL=style.css.map */
