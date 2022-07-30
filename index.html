@@ -13,136 +13,167 @@
      <div class="container"> 
           <header> 
                <img src="./img/river-svgrepo-com.svg" id="page-icon"> 
-               <div class="header-content" id="page-title"> WithyWindle</div> 
-               <div class="header-content" id="city-name"> Vladivostok</div> 
-               <div class="header-content" id="country-name"> Russia</div> 
+               <div class="header-content" id="page-title"> WithyWindle </div> 
+               <div class="header-content" id="city-name"> Vladivostok </div> 
                <div class="header-content" id="input-field"> 
-                    <input type="text" class="header-input" id="city-input" placeholder="Enter your city"> 
+                    <input type="text" class="header-input" id="city-input" placeholder="Enter your city" value="Vladivostok"> 
                     <button class="header-button" id="search-button"> </button> 
                </div> 
           </header> 
-          <main> 
-               <section class="page-section" id="side-bar"> 
-                    <div class="sidebar-data-field"> 
-                         <label for="lat"> Latitude: </label> 
-                         <output class="side-bar-output" id="lat"> </output> 
-                    </div> 
+          <main>
 
-                    <div class="sidebar-data-field"> 
-                         <label for="lon"> Longitude: </label> 
-                         <output class="side-bar-output" id="lon"> </output> 
-                    </div> 
+               <section class="data-section" id="country-section">
+                    <div class="section-title" id="country-title"> Country </div>
 
-                    <div class="sidebar-data-field"> 
+                    <div class="widget" id="country-widget"> 
+                         <img class="icon" id="map-img" src="">
+                    </div>
+
+                    <div class="data-field"> 
                          <label for="country"> Country: </label> 
-                         <output class="side-bar-output" id="country"> </output> 
+                         <output class="output" id="country"> </output> 
                     </div> 
+
+                    <div class="data-field"> 
+                         <label for="region"> Region: </label> 
+                         <output class="output" id="region"> </output> 
+                    </div> 
+               </section>
                     
-                    <div class="sidebar-data-field"> 
-                         <label for="time-zone"> Time-zone: </label> 
-                         <output class="side-bar-output" id="time-zone"> </output> 
-                    </div> 
+                    <section class="data-section" id="location">
+                         <div class="section-title" id="location-title">Location</div>
 
-                    <div class="sidebar-data-field"> 
-                         <label for="sea_level"> Sea-Level: </label> 
-                         <output class="side-bar-output" id="sea_level"> </output> 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="lat"> Latitude: </label> 
+                              <output class="output" id="lat"> </output> 
+                         </div> 
+     
+                         <div class="data-field"> 
+                              <label for="lon"> Longitude: </label> 
+                              <output class="output" id="lon"> </output> 
+                         </div> 
 
-                    <div class="sidebar-data-field"> 
-                         <label for="grnd_level"> Sea-Level: </label> 
-                         <output class="side-bar-output" id="grnd_level"> </output> 
-                    </div> 
+                         <div class="data-field">
+                              <label for="sea_level"> Sea-Level: </label> 
+                              <output class="output" id="sea_level"> </output> 
+                         </div> 
 
-                    <div class="sidebar-data-field"> 
-                         <label for="dt"> Collected at: </label> 
-                         <output class="side-bar-output" id="dt"> </output> 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="grnd_level"> Ground-Level: </label> 
+                              <output class="output" id="grnd_level"> </output> 
+                         </div> 
 
-                    <div class="sidebar-data-field"> 
-                         <label for="sunrise"> Sunrise at: </label> 
-                         <output class="side-bar-output" id="sunrise"> </output> 
-                    </div> 
+                    </section>
 
-                    <div class="sidebar-data-field"> 
-                         <label for="sunset"> Sunset at: </label> 
-                         <output class="side-bar-output" id="sunset"> </output> 
-                    </div> 
+                    <section class="data-section" id="time">
+                         <div class="section-title" id="time-title">Time</div>
+                         
+                         <div class="data-field"> 
+                              <label for="time_zone"> Time-zone: </label> 
+                              <output class="output" id="time_zone"> </output> 
+                         </div> 
 
-                    <div class="sidebar-data-field"> 
-                         <label for="tempature"> Temprature: </label> 
-                         <output class="side-bar-output" id="tempature"> </output> 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="dt"> Collected at: </label> 
+                              <output class="output" id="dt"> </output> 
+                         </div> 
+     
+                         <div class="data-field"> 
+                              <label for="sunrise"> Sunrise at: </label> 
+                              <output class="output" id="sunrise"> </output> 
+                         </div> 
+     
+                         <div class="data-field"> 
+                              <label for="sunset"> Sunset at: </label> 
+                              <output class="output" id="sunset"> </output> 
+                         </div>
+                    </section>
 
-                    <div class="sidebar-data-field"> 
-                         <label for="feels_like"> Feels-like: </label> 
-                         <output class="side-bar-output" id="feels_like"> </output> 
-                    </div> 
+                    <section class="data-section" id="weather">
+                         <div class="section-title" id="atmosphere-title">Weather</div>
 
-                    <div class="sidebar-data-field"> 
-                         <label for="zone-area"> Minimum: </label> 
-                         <output class="side-bar-output" id="temp_min"> </output> 
-                    </div> 
+                         <div class="widget" id="weather-widget"> 
+                              <img class="icon" id="weather-icon" src="">
+                         </div> 
+          
+                         <div class="data-field"> 
+                              <label for="type"> Type: </label> 
+                              <output class="output" id="type"> </output> 
+                         </div> 
 
-                    <div class="sidebar-data-field"> 
-                         <label for="zone-area"> Maximum: </label> 
-                         <output class="side-bar-output" id="temp_max"> </output> 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="description"> Description: </label> 
+                              <output class="output" id="description"> </output> 
+                         </div> 
+                    </section>
 
-                    <div class="sidebar-data-field"> 
-                         <label for="pressure"> Pressure: </label> 
-                         <output class="side-bar-output" id="pressure"> </output> 
+                    <section class="data-section" id="temprature">
+                         <div class="section-title" id="atmosphere-title">Temprature</div>
 
-                    </div> 
-                    <div class="sidebar-data-field"> 
-                         <label for="humidity"> Humidity: </label> 
-                         <output class="side-bar-output" id="humidity"> </output> 
+                         <div class="data-field"> 
+                              <label for="temp"> Temprature: </label> 
+                              <output class="output" id="temp"> </output> 
+                         </div> 
 
-                    </div> 
-                    <div class="sidebar-data-field"> 
-                         <label for="dew_point"> Dew Point: </label> 
-                         <output class="side-bar-output" id="dew_point"> </output> 
+                         <div class="data-field"> 
+                              <label for="feels_like"> Feels-like: </label> 
+                              <output class="output" id="feels_like"> </output> 
+                         </div> 
 
-                    </div> 
-                    <div class="sidebar-data-field"> 
-                         <label for="uvi"> UV Index: </label> 
-                         <output class="side-bar-output" id="uvi"> </output> 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="zone-area"> Minimum: </label> 
+                              <output class="output" id="temp_min"> </output> 
+                         </div> 
 
-                    <div class="sidebar-data-field"> 
-                         <label for="clouds"> Clouds: </label> 
-                         <output class="side-bar-output" id="clouds"> </output> 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="zone-area"> Maximum: </label> 
+                              <output class="output" id="temp_max"> </output> 
+                         </div> 
+                    </section>
 
-                    <div class="sidebar-data-field"> 
-                         <label for="visibility"> Visibitily: </label> 
-                         <output class="side-bar-output" id="visibility"> </output> 
-                    </div> 
+                    <section class="data-section" id="atmosphere">
+                         <div class="section-title" id="atmosphere-title">Atmosphere</div>
 
-                    <div class="sidebar-data-field"> 
-                         <label for="speed"> Wind-speed: </label> 
-                         <output class="side-bar-output" id="speed"> </output> 
+                         <div class="data-field"> 
+                              <label for="pressure"> Pressure: </label> 
+                              <output class="output" id="pressure"> </output> 
+                         </div> 
 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="humidity"> Humidity: </label> 
+                              <output class="output" id="humidity"> </output> 
+                         </div> 
 
-                    <div class="sidebar-data-field"> 
-                         <label for="deg"> Wind-angle: </label> 
-                         <output class="side-bar-output" id="deg"> </output> 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="clouds"> Clouds: </label> 
+                              <output class="output" id="clouds"> </output> 
+                         </div> 
 
-                    <div class="sidebar-data-field"> 
-                         <label for="gust"> Wind-gust: </label> 
-                         <output class="side-bar-output" id="gust"> </output> 
-                    </div> 
+                         <div class="data-field"> 
+                              <label for="visibility"> Visibitily: </label> 
+                              <output class="output" id="visibility"> </output> 
+                         </div> 
+                    </section>
 
-               </section> 
-               <section class="page-section" id="today"> 
-                    <div class="weather-widget" id="current"> 
+                    <section class="data-section" id="wind">
+                         <div class="section-title" id="wind-title">Wind data</div>
 
-                    </div> 
-               </section> 
-               <section class="page-section" id="this-week"> 
-               </section> 
+                         <div class="data-field"> 
+                              <label for="speed"> Wind-speed : </label> 
+                              <output class="output" id="speed"> </output> 
+                         </div> 
 
+                         <div class="data-field"> 
+                              <label for="deg"> Wind-angle : </label> 
+                              <output class="output" id="deg"> </output> 
+                         </div> 
+
+                         <div class="data-field"> 
+                              <label for="gust"> Wind-gust : </label> 
+                              <output class="output" id="gust"> </output> 
+                         </div> 
+                    </section>
+                    
           </main> 
           <footer> 
                <a target="_blank" class="footer-link" id="weather-link" href="https://openweathermap.org/"> 
